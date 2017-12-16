@@ -109,7 +109,11 @@ password: janedoe
 }
 ```
 
-
+### RUN APPLICATION WITH DOCKER.
+ - Have `docker` and `docker-compose` installed locally.
+ - Clone the repository with `git clone https://github.com/kati-frantz/UserManager.git`
+ - In the cloned project directory, run `docker-compose up`
+ - That's it. You can start making api calls as specified above.
 
 ### Author
 **Olajide Bolaji 'Nuel** - Software Developer at Andela
