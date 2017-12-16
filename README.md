@@ -5,8 +5,15 @@
 This repository contains a simple demo API built with NodeJS.
 The API is used to manage users in a MongoDB database.
 
+## RUN APPLICATION WITH DOCKER.
+ - Have `docker` and `docker-compose` installed locally.
+ - Clone the repository with `git clone https://github.com/kati-frantz/UserManager.git`
+ - In the cloned project directory, run `docker-compose up`
+ - That's it. You can start making api calls as specified
+
 ### Development
-This application was developed using [ExpressJS](http://expressjs.com/). MongoDB was used for persisting data with [Mongoose](https://mongoosejs.com/) as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping).
+ - Setup a docker volume in the same cloned directory if you need to edit the application.
+ - This application was developed using [ExpressJS](http://expressjs.com/). MongoDB was used for persisting data with [Mongoose](https://mongoosejs.com/) as [ORM](https://en.wikipedia.org/wiki/Object-relational_mapping).
 
 ### Installation
 * Start up your terminal (or Command Prompt on Windows OS).
@@ -108,12 +115,6 @@ password: janedoe
   "__v": 0
 }
 ```
-
-### RUN APPLICATION WITH DOCKER.
- - Have `docker` and `docker-compose` installed locally.
- - Clone the repository with `git clone https://github.com/kati-frantz/UserManager.git`
- - In the cloned project directory, run `docker-compose up`
- - That's it. You can start making api calls as specified above.
 
 ### Author
 **Olajide Bolaji 'Nuel** - Software Developer at Andela
