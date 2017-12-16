@@ -1,0 +1,20 @@
+version: "3"
+services:
+  web:
+    image: bahdcoder/user-manager
+    # Setup environment variables needed by node app
+    environment: 
+      - PORT=8080
+      - DB_URL=mongodb://mongodb/userManager
+    # the port to expose to outside world
+    ports: 
+      - "8080:8080"
+    links:
+    # Services required by the web service
+      - mongodb
+  mongodb:
+    # Use the official mongo docker image for this service
+    image: "mongo"
+    ports: 
+    #expose mongo service on default mongo port
+      - "27017:27017"
